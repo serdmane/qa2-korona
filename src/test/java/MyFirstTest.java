@@ -16,7 +16,7 @@ public class MyFirstTest {
     @Test
     public void firstTest() {
         System.out.println("Hello, corona, maza faka!");
-        int sum = sumTwoDigits(15, 20);
+        int sum = sumTwoDigits(10, 20);
         System.out.println("Aaaand the sum is: " + sum);
         System.out.println(sumTwoDigits(3, 8));
 
