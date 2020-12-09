@@ -1,12 +1,31 @@
-import java.math.BigDecimal;
+import org.junit.jupiter.api.Test;
 
 public class HomeWork {
-    public static void main(String[] args) {
-        System.out.println("Down payment" + 50000.00 * 0.15);
-       // Loan total amount = 50000.00 (Currency = EUR);
-        System.out.println("Interest rate " + 2.6f);
+    @Test
+    public void loanCounter() {
+        float startSum = 7500;
+        float interestRate = 2.6f; // 2,6%
+        float interestRateSum = startSum * interestRate / 100;
+        float totalLoanSum = interestRateSum + startSum;
+        System.out.println("Interest Rate Sum " + interestRateSum);
+        System.out.println("Total loan Sum " + totalLoanSum);
+    }
 
-
+    @Test
+    public void stringCounter() {
+        String testString = "Hodor, Hodor, Winter is Coming!";
+        System.out.print(testString.length());
 
     }
+
+
 }
+
+
+
+
+
+
+
+
+
